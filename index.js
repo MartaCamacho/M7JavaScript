@@ -34,3 +34,28 @@ for (let i = 0; i < name.length; i++){
     console.log(`Els noms de persones no contenen el número:${substr}`)
   }
 }
+
+/* EXERCICI 3 */
+
+name = "MARTA";
+
+const dividedName = name.split("")
+
+const separateLetters = dividedName.map(letter => letter)
+
+function countTimesWordApperesInArray(words) {
+        let size = words.length;
+        for (let i = 0; i < size; i += 1) {
+            let count = 0;
+
+            let element = words[i];
+            for (let j = 0; j < size; j += 1) {
+                if (words[j] == element) {
+                    count += 1;
+                }
+            }
+            console.log(words[i] + " " + count);
+        }
+    }
+
+countTimesWordApperesInArray(separateLetters)
