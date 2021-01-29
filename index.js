@@ -6,8 +6,8 @@ function splitName() {
   for (let i = 0; i < name.length; i++) {
     const substr = name.substring(i, i + 1);
     console.log(substr);
-  }
-}
+  };
+};
 
 splitName();
 
@@ -43,9 +43,9 @@ function vowelOrNot() {
       console.log(`He trobat la CONSONANT:${substr}`);
     } else if (numberTest(substr) == true) {
       console.log(`Els noms de persones no contenen el número:${substr}`);
-    }
-  }
-}
+    };
+  };
+};
 vowelOrNot();
 
 /* EXERCICI 3 */
@@ -64,14 +64,13 @@ function arrMap() {
       for (let j = 0; j < size; j += 1) {
         if (words[j] == element) {
           count += 1;
-        }
-      }
+        };
+      };
       console.log(words[i] + " " + count);
-    }
-  }
-
+    };
+  };
   countTimesWordApperesInArray(separateLetters);
-}
+};
 arrMap();
 
 /* EXERCICI 4 */
@@ -112,8 +111,8 @@ function findEmailAddresses() {
   var result = [];
   for (var i = 0; i < email.length; i++) {
     if (result.indexOf(email[i]) == -1) result.push(email[i]);
-  }
+  };
   result = result.join(", ");
-  console.log(result) ;
-}
-findEmailAddresses()
+  console.log(result);
+};
+findEmailAddresses();
